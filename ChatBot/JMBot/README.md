@@ -1,4 +1,4 @@
-# JMBot
+# jmbot
 
 ## How to start
 

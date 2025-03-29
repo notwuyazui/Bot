@@ -1,14 +1,19 @@
 [project]
-name = "JMBot"
+name = "jmbot"
 version = "0.1.0"
-description = "JMBot"
+description = "jmbot"
 readme = "README.md"
 requires-python = ">=3.9, <4.0"
 
 [tool.nonebot]
 adapters = [
-    
+    { name = "QQ", module_name = "nonebot.adapters.qq" },
+    { name = "Console", module_name = "nonebot.adapters.console" },
+    { name = "GitHub", module_name = "nonebot.adapters.github" },
+    { name = "RedProtocol", module_name = "nonebot.adapters.red" },
+    { name = "Mail", module_name = "nonebot.adapters.mail" }
 ]
 plugins = []
-plugin_dirs = ["plugins"]
-builtin_plugins = ["echo", "single_session"]
+plugin_dirs = ["jmbot/plugins"]
+builtin_plugins = ["echo", "single_session", "nonebot_plugin_jmcomic"]
+
