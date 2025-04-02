@@ -3,7 +3,7 @@ name = "jmbot"
 version = "0.1.0"
 description = "jmbot"
 readme = "README.md"
-requires-python = ">=3.9, <4.0"
+requires-python = ">=3.9, <4.0" 
 
 [tool.nonebot]
 adapters = [
@@ -13,7 +13,7 @@ adapters = [
     { name = "RedProtocol", module_name = "nonebot.adapters.red" },
     { name = "Mail", module_name = "nonebot.adapters.mail" }
 ]
-plugins = []
+plugins = ["nonebot_plugin_deepseek", "nonebot_plugin_jmcomic"]
 plugin_dirs = ["jmbot/plugins"]
 builtin_plugins = ["echo", "single_session", "nonebot_plugin_jmcomic"]
 
