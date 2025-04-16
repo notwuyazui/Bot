@@ -12,5 +12,5 @@ def clear_folder(path):
         except Exception as e:
             print(f"删除失败: {item_path} - {str(e)}")
 
-folder_path = "C:/Users/13928/AppData/Local/nonebot2"
+folder_path = "C:/Users/wangyz/AppData/Local/nonebot2"
 clear_folder(folder_path)
